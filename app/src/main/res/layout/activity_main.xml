@@ -8,7 +8,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/MainFragmentContainer"
-        android:name="com.example.skytest.Search"
+        android:name="com.example.skytest.fragments.Search"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
