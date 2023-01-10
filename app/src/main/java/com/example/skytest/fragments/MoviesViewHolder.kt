@@ -4,6 +4,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.interactor.MovieModel
 import com.example.skytest.R
 
@@ -14,5 +15,7 @@ class MoviesViewHolder(view : View) : RecyclerView.ViewHolder(view) {
 
     fun renderView(model:MovieModel){
         holderTextView.setText(model.title)
+        val imageUrl = model.image
+        Glide.with(holderImage.context).load(imageUrl).into(holderImage)
     }
 }

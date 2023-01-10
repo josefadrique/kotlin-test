@@ -9,7 +9,6 @@
         android:id="@+id/MovieImageView"
         android:layout_width="150dp"
         android:layout_height="200dp"
-        tools:background="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />

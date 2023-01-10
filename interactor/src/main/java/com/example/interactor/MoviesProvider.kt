@@ -6,7 +6,8 @@ class MoviesProvider {
             MovieModel(
                 id = "tt1375666",
                 resultType ="Title",
-                image = "https=//m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6800_AL_.jpg",
+                //image = "https=//m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6800_AL_.jpg",
+                image = "https://cursokotlin.com/wp-content/uploads/2017/07/spiderman.jpg",
                 title = "Inception",
                 description = "(2010)"
             ),
