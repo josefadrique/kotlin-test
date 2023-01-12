@@ -2,7 +2,7 @@ package com.example.skytest.fragments;
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.interactor.MovieModel
+import com.example.interactor.model.MovieModel
 import com.example.skytest.R
 
 class MoviesAdapter(val movieDataList:List<MovieModel>) : RecyclerView.Adapter<MoviesViewHolder>(){

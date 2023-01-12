@@ -2,16 +2,22 @@ package com.example.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.interactor.MovieModel
+import androidx.lifecycle.viewModelScope
 import com.example.interactor.MoviesProvider
+import com.example.interactor.model.MovieModel
+import kotlinx.coroutines.launch
 
 class MoviesViewModel() : ViewModel() {
 
     val movieModel = MutableLiveData<List<MovieModel>>()
 
-    fun getMoviesData(){
-        val MoviesData = MoviesProvider.listOfMovies
-        movieModel.postValue(MoviesData)
+    fun PerformSearch(query:String){
+        viewModelScope.launch {
+            val result = MoviesProvider.GetSearchResponse(query)
+            result?.let{
+                movieModel.postValue(result.results)
+            }
+        }
     }
 
 }
