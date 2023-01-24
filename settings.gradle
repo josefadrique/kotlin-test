@@ -16,3 +16,4 @@ rootProject.name = "SkyTest"
 include ':app'
 include ':viewmodel'
 include ':interactor'
+include ':utils'

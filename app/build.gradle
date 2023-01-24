@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'com.example.skytest'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.skytest"
@@ -50,10 +50,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
     // LiveData
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
-    // Glide
-    implementation 'com.github.bumptech.glide:glide:4.14.2'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
     implementation "io.insert-koin:koin-android:3.3.2"
     api project(path:':viewmodel')
     api project(path:':interactor')
+    api project(path:':utils')
 }

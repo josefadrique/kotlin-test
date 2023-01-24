@@ -47,12 +47,11 @@ class Search : Fragment(), SearchView.OnQueryTextListener {
         moviesViewModel.movieModel.observe(viewLifecycleOwner, observer)
     }
 
-    private fun InitMoviesRecyclerView(movieList:List<MovieModel>)
-    {
-        val moviesRecyclerView = SearchBinding.MoviesSearchlist
-        moviesRecyclerView.layoutManager = GridLayoutManager(moviesRecyclerView.context, 2)
-        moviesRecyclerView.adapter = MoviesAdapter(movieList)
-
+    private fun InitMoviesRecyclerView(movieList:List<MovieModel>) {
+        with(SearchBinding.MoviesSearchlist){
+            layoutManager = GridLayoutManager(context, 2)
+            adapter = MoviesAdapter(movieList)
+        }
     }
 
     override fun onQueryTextSubmit(query: String?): Boolean {
