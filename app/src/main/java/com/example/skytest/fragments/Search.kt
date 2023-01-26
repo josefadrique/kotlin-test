@@ -6,19 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.SearchView
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.interactor.model.MovieModel
 import com.example.skytest.databinding.FragmentSearchBinding
 import com.example.viewmodel.MoviesViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class Search : Fragment(), SearchView.OnQueryTextListener {
 
     private var fragmentSearchBinding: FragmentSearchBinding? = null
     private val SearchBinding get() = fragmentSearchBinding!!
-    private val moviesViewModel:MoviesViewModel by viewModels()
+    private val moviesViewModel:MoviesViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

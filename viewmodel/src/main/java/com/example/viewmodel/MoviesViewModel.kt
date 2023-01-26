@@ -7,9 +7,7 @@ import com.example.interactor.MoviesProvider
 import com.example.interactor.model.MovieModel
 import kotlinx.coroutines.launch
 
-class MoviesViewModel() : ViewModel() {
-
-    val movieModel = MutableLiveData<List<MovieModel>>()
+class MoviesViewModel(var movieModel : MutableLiveData<List<MovieModel>>) : ViewModel() {
 
     fun PerformSearch(query:String){
         viewModelScope.launch {

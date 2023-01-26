@@ -1,7 +1,6 @@
 package com.example.interactor
 
 import com.example.interactor.core.RetroFitHelper
-import com.example.interactor.model.MovieModel
 import com.example.interactor.model.SearchResultModel
 import com.example.interactor.network.SearchApiClient
 import kotlinx.coroutines.Dispatchers
